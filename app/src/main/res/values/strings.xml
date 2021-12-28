@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">weatherApp</string>
+    <string name="home">Home</string>
+    <string name="report">Weather Reports</string>
+    <string name="home_text">Welcome to this Weather Report App, You can stay on this page or choose to get a nearly complete Weather report.</string>
+    <string name="home_button">Weather Report</string>
+
+    <string name="report_button">Run</string>
+</resources>
