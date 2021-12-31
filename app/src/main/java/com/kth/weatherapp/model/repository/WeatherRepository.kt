@@ -14,6 +14,7 @@ class WeatherRepository {
     private val httpClient = WeatherHttpClient()
 
     // TODO: Should be stored in DB
+    // TODO: Missing city in the statement to reach 60 seconds with 1 per 10 seconds starting from 0
     private val cityList = listOf(
         City(id = 0, name = "Rennes", cityKey = "Rennes,fr", isInBrittany = true),
         City(id = 1, name = "Paris", cityKey = "Paris,fr"),

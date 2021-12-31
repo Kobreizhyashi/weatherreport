@@ -58,6 +58,7 @@ class WeatherActivityViewModel : ViewModel() {
                 //TODO : 'If/else' waterfall can maybe be improved
                 if (ticker % 6 == 0) {
                     if (ticker == 60) {
+            // TODO : The statement tells us that the message loop should never stop so we DON'T timer.cancel().purge() here
                         handleTimerOver()
                     } else {
                         updateMessage()
@@ -94,15 +95,15 @@ class WeatherActivityViewModel : ViewModel() {
             viewModelScope.launch(Dispatchers.IO) {
                 repository.fetchData(citiesIndex)
 
-             withContext(Dispatchers.Main) {
-                 progressBarValue.emit(progressBarValue.value.plus(0.2f))
-                 // TODO : I could do a simple toInt() to remove the ".0" but sometimes it's not the better solution, In the case of StateFlow, it's really not. It breaks the event loop.
-                 // TODO : And I like to work with strings when I have to return a string...
-                 progressBarText.emit(
-                     (progressBarValue.value * 100).toString()
-                         .substringBefore('.') + Constants.PERCENT
-                 )
-             }
+                withContext(Dispatchers.Main) {
+                    progressBarValue.emit(progressBarValue.value.plus(0.2f))
+                    // TODO : I could do a simple toInt() to remove the ".0" but sometimes it's not the better solution, In the case of StateFlow, it's really not. It breaks the event loop.
+                    // TODO : And I like to work with strings when I have to return a string...
+                    progressBarText.emit(
+                        (progressBarValue.value * 100).toString()
+                            .substringBefore('.') + Constants.PERCENT
+                    )
+                }
                 citiesIndex++
             }
         } catch (e: Exception) {
