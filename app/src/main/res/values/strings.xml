@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">weatherApp</string>
-    <string name="home">Home</string>
-    <string name="report">Weather Reports</string>
-    <string name="home_text">Welcome to this Weather Report App, You can stay on this page or choose to get a nearly complete Weather report.</string>
-    <string name="home_button">Weather Report</string>
+    <string name="home">Accueil</string>
+    <string name="report">Bulletin météo</string>
+    <string name="home_text">Bienvenue sur cette application Météo, Vous pouvez rester sur cette page ou choisir de cliquer sur le bouton ci-dessous pour obtenir un bulletin météo plutôt complet.</string>
+    <string name="home_button">Bulletin météo</string>
 
-    <string name="report_button">Run</string>
+    <string name="report_restart_button">Recommencer</string>
+    <string name="city_name">Ville</string>
+    <string name="city_temperature">Température</string>
+    <string name="city_clouds">Couverture nuageuse</string>
 </resources>

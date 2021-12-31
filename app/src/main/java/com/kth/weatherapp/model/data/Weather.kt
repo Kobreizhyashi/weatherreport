@@ -1,4 +1,4 @@
-package com.kth.weatherapp.data.entities
+package com.kth.weatherapp.model.data
 
 import com.google.gson.annotations.SerializedName
 

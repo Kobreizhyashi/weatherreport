@@ -1,4 +1,4 @@
-package com.kth.weatherapp.data.utils
+package com.kth.weatherapp.model.utils
 // TODO Uncomment this and replace values with yours
 /*
 abstract class Constants {
