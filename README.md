@@ -23,8 +23,8 @@ Every 6 seconds, a message is updated above this button, without any time out.
 
 ### Make it work (**IMPORTANT**)
 
-
-
 The API KEY has been removed for security reasons and must be filled in `data/constants.kt`.
+
+A key can be grabbed straight out of openweathermap.com (sign up & check your emails :-)
 
 If this is not done, all API calls will throw IOException and the generation will be stopped...
