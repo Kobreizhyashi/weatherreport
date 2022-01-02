@@ -4,8 +4,9 @@ object Constants {
 
     const val API_URL = "https://api.openweathermap.org/data/2.5/weather?"
 
-    // TODO should NEVER be publicly versioned or should be hidden
-    const val API_KEY = "fee77af3b888308e745df0ca5f2a62a7"
+    // TODO should NEVER be publicly versioned or should be hidden (sign up to openWeathermap.com and replace this empty string with your key :-) )
+    const val API_KEY = ""
+
     const val API_ID_PARAM = "&APPID="
     const val API_CITY_PARAM = "q="
     const val API_METRIC_SYS_PARAM = "&units=metric"

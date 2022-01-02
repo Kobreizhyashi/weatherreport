@@ -29,7 +29,6 @@ class WeatherRepository {
     fun clearList() = weatherList.clear()
 
     fun fetchData(cityId: Int) {
-        try {
             buildUrl(cityId)?.let { url ->
                 val responseBody = httpClient.call(url)
                 responseBody?.let {
@@ -39,9 +38,7 @@ class WeatherRepository {
                     }
                 }
             }
-        } catch (e: Exception) {
-            throw e
-        }
+
     }
 
     fun getWeatherReports(): List<WeatherReport> = weatherList

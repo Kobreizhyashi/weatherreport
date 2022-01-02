@@ -9,4 +9,5 @@
     <string name="city_name">Ville</string>
     <string name="city_temperature">Température</string>
     <string name="city_clouds">Couverture nuageuse</string>
+    <string name="report_error">Une erreur s\'est produite durant la récupération des données météorologiques, veuillez ressayer.</string>
 </resources>
