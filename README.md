@@ -2,13 +2,13 @@
 
 ### Foreword
 
-This API has been coded as a good way for me to play with Jetpack compose. 
+This app has been coded as a good way for me to play with Jetpack compose. 
 
 This helped me discover or practice on some concept as Stateflows, or coroutines.
 
 ### Short description
 
-This API is supposed to show a first screen (called Home) with a button which lead the user to an another screen called Weather Report. 
+This app is supposed to show a first screen (called Home) with a button which lead the user to an another screen called Weather Report. 
 
 This second activity will show a progress Bar, from 0% to 100%.
 
